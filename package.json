@@ -1,0 +1,24 @@
+{
+  "name": "api-node",
+  "version": "1.0.0",
+  "description": "> Repositório criado para estudo prático de Backend, com foco em entendimento real do funcionamento.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacgbr/Central-de-Estudos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/isaacgbr/Central-de-Estudos/issues"
+  },
+  "homepage": "https://github.com/isaacgbr/Central-de-Estudos#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
