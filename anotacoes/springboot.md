@@ -115,13 +115,11 @@ HelloController
 ```
 Cria rotas da API
 ```
-
 pom.xml 
-```
 
+```
 Gerencia dependências
 ```
-
 ---
 
 # ▶️ 3️⃣ Executar o Servidor
