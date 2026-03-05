@@ -155,14 +155,20 @@ Resposta esperada:
 
 ---
 
-# 📌 Rotas Criadas na Aula
+# 📌 Rotas Criadas: 
 
-### Hello
+### Rota Hello
 
 ```
-/hello
-```
+@GetMapping("/hello")
+    public Map<String, String> hello() {
 
+        // Retorna JSON automaticamente
+        return Map.of("message", "Hello World");
+
+    }
+
+```
 Retorna:
 
 ```
@@ -171,10 +177,19 @@ Hello World
 
 ---
 
-### Status
+### Rota Status
 
 ```
-/status
+@GetMapping("/status")
+    public Map<String, String> status() {
+
+        return Map.of(
+            "status", "ok",
+            "framework", "Spring Boot"
+        );
+
+    }
+
 ```
 
 Retorna:
@@ -191,7 +206,15 @@ Retorna:
 ### Hora Atual
 
 ```
-/time
+@GetMapping("/time")
+    public Map<String, String> time() {
+
+        return Map.of(
+            "time", LocalDateTime.now().toString()
+        );
+
+    }
+
 ```
 
 Retorna a data e hora do servidor.
@@ -201,7 +224,15 @@ Retorna a data e hora do servidor.
 ### Usuário
 
 ```
-/user/{name}
+@GetMapping("/user/{name}")
+    public Map<String, String> user(@PathVariable String name) {
+
+        return Map.of(
+            "user", name
+        );
+
+    }
+    
 ```
 
 Exemplo:
@@ -265,7 +296,7 @@ Focar principalmente em:
 
 ---
 
-# 🧠 O que aprendemos nesta aula
+# 🧠 O que aprendemos até o momento:
 
 * Criar servidor HTTP
 * Criar rotas REST
@@ -275,7 +306,7 @@ Focar principalmente em:
 
 ---
 
-# 🚀 Próximos Passos (Próximas Aulas)
+# 🚀 Próximos Passos (Próximas Anotações)
 
 Continuaremos evoluindo a API aprendendo:
 
@@ -286,8 +317,3 @@ Continuaremos evoluindo a API aprendendo:
 * CRUD completo
 * Boas práticas de backend
 
----
-
-✍️ Autor: Isaac Gabriel
-📅 Projeto: Central de Estudos Backend
-🎓 Disciplina: Frameworks Backend
