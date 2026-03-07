@@ -3,8 +3,7 @@
 > Repositório pessoal de estudos em programação e tecnologia — tudo que aprendo vai aqui.
 
 ![Status](https://img.shields.io/badge/Status-Em%20andamento-yellow?style=flat-square)
-!![Último commit](https://img.shields.io/github/last-commit/isaacgbr/central-de-estudos?style=flat-square&label=Última%20atualização&color=blue)
-![Feito com](https://img.shields.io/badge/Feito%20com-%E2%9D%A4-red?style=flat-square)
+![Último commit](https://img.shields.io/github/last-commit/isaacgbr/central-de-estudos?style=flat-square&label=Última%20atualização&color=blue)
 
 ---
 
