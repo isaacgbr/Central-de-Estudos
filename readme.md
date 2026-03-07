@@ -44,6 +44,11 @@ central-de-estudos/
 
 ## 📖 Conteúdo
 
+### 🧠 Fundamentos
+| Conteúdo | Descrição |
+|----------|-----------|
+| [Lógica de Programação](./fundamentos/README-logica-programacao.md) | Algoritmos, variáveis, decisões e funções |
+
 ### 🟨 Linguagens
 | Conteúdo | Descrição |
 |----------|-----------|
@@ -51,6 +56,7 @@ central-de-estudos/
 | [Java — Parte 1](./linguagens/java/README-java-parte1.md) | Fundamentos, tipos, operadores, loops e métodos |
 | [Java — Parte 2](./linguagens/java/README-java-parte2.md) | Orientação a Objetos, herança e polimorfismo |
 | [Java — Parte 3](./linguagens/java/README-java-parte3.md) | Arrays, ArrayList, exceções e boas práticas |
+| [TypeScript](./linguagens/typescript/README-typescript.md) | Tipagem, interfaces, classes e generics |
 
 ### 🟢 Frameworks
 | Conteúdo | Descrição |
@@ -61,6 +67,7 @@ central-de-estudos/
 | Conteúdo | Descrição |
 |----------|-----------|
 | [Git & GitHub](./ferramentas/git-github/README-git-github-resumo.md) | Controle de versão, branches, commits e Pull Requests |
+| [SQL](./ferramentas/sql/README-sql.md) | Criação de tabelas, consultas, joins e boas práticas |
 
 ### 🔐 Segurança
 | Conteúdo | Descrição |
