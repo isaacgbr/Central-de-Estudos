@@ -3,7 +3,7 @@
 > Repositório pessoal de estudos em programação e tecnologia — tudo que aprendo vai aqui.
 
 ![Status](https://img.shields.io/badge/Status-Em%20andamento-yellow?style=flat-square)
-![Último commit](https://img.shields.io/github/last-commit/isaacgbr/central-de-estudos?style=flat-square&label=Última%20atualização&color=blue)
+![](https://img.shields.io/github/last-commit/isaacgbr/central-de-estudos?style=flat-square&label=Última%20atualização&color=green)
 
 ---
 
@@ -18,12 +18,19 @@ A ideia é simples: **aprender, documentar e evoluir.**
 ## 🛠️ Tecnologias estudadas
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 
 ---
@@ -32,10 +39,11 @@ A ideia é simples: **aprender, documentar e evoluir.**
 
 ```
 central-de-estudos/
-├── linguagens/         ← JavaScript, Java e mais
-├── frameworks/         ← Node.js, Express e mais
-├── ferramentas/        ← Git, GitHub e mais
-├── seguranca/          ← Autenticação, JWT e mais
+├── fundamentos/        ← lógica e algoritmos
+├── linguagens/         ← JavaScript, TypeScript, Java, Python
+├── frameworks/         ← Node.js/Express, React, Spring Boot
+├── ferramentas/        ← Git, SQL, Docker, Postman, npm
+├── seguranca/          ← Autenticação e JWT
 ├── templates/          ← Modelos de código comentados
 └── projetos/           ← Projetos práticos reais
 ```
@@ -47,32 +55,39 @@ central-de-estudos/
 ### 🧠 Fundamentos
 | Conteúdo | Descrição |
 |----------|-----------|
-| [Lógica de Programação](./fundamentos/README-logica-programacao.md) | Algoritmos, variáveis, decisões e funções |
+| [Lógica de Programação](./fundamentos/README-logica-programacao.md) | Algoritmos, variáveis, decisões, loops e funções |
+| [Algoritmos e Estruturas de Dados](./fundamentos/README-algoritmos.md) | Big O, arrays, pilha, fila, busca, ordenação e recursão |
 
 ### 🟨 Linguagens
 | Conteúdo | Descrição |
 |----------|-----------|
 | [JavaScript](./linguagens/javascript/README-javascript.md) | Fundamentos, funções, classes, async/await e módulos |
+| [TypeScript](./linguagens/typescript/README-typescript.md) | Tipagem, interfaces, enums, classes e generics |
 | [Java — Parte 1](./linguagens/java/README-java-parte1.md) | Fundamentos, tipos, operadores, loops e métodos |
 | [Java — Parte 2](./linguagens/java/README-java-parte2.md) | Orientação a Objetos, herança e polimorfismo |
 | [Java — Parte 3](./linguagens/java/README-java-parte3.md) | Arrays, ArrayList, exceções e boas práticas |
-| [TypeScript](./linguagens/typescript/README-typescript.md) | Tipagem, interfaces, classes e generics |
+| [Python](./linguagens/python/README-python.md) | Fundamentos, listas, dicionários, classes e módulos |
 
-### 🟢 Frameworks
+### ⚙️ Frameworks
 | Conteúdo | Descrição |
 |----------|-----------|
 | [Node.js & Express](./frameworks/nodejs-express/README-nodejs-express.md) | API REST, rotas, controllers, services e middlewares |
+| [React](./frameworks/react/README-react.md) | Componentes, props, useState, useEffect e consumo de API |
+| [Spring Boot](./frameworks/spring-boot/README-springboot.md) | API REST com Java, JPA, controllers e repositories |
 
 ### 🔧 Ferramentas
 | Conteúdo | Descrição |
 |----------|-----------|
 | [Git & GitHub](./ferramentas/git-github/README-git-github-resumo.md) | Controle de versão, branches, commits e Pull Requests |
 | [SQL](./ferramentas/sql/README-sql.md) | Criação de tabelas, consultas, joins e boas práticas |
+| [Docker](./ferramentas/docker/README-docker.md) | Containers, Dockerfile, docker-compose e boas práticas |
+| [Postman](./ferramentas/postman/README-postman.md) | Testes de API, collections, environments e JWT |
+| [npm & npx](./ferramentas/npm-npx/README-npm-npx.md) | Gerenciamento de pacotes, scripts e package.json |
 
 ### 🔐 Segurança
 | Conteúdo | Descrição |
 |----------|-----------|
-| [Autenticação](./seguranca/autenticacao-js/README-autenticacao-resumo.md) | Login, JWT, bcrypt e proteção de rotas |
+| [Autenticação](./seguranca/autenticacao/README-autenticacao-resumo.md) | Login, JWT, bcrypt e proteção de rotas |
 
 ### 📋 Templates
 | Template | Descrição |
@@ -100,12 +115,23 @@ central-de-estudos/
 
 ## 🔜 Em breve
 
-- [ ] Python — fundamentos e orientação a objetos
-- [ ] TypeScript — tipagem no JavaScript
-- [ ] React — frontend com componentização
-- [ ] Spring Boot — backend com Java
-- [ ] SQL — banco de dados relacional
-- [ ] Docker — containerização de aplicações
+### Conteúdo
+- [ ] Templates de SQL e TypeScript
+- [ ] Testes automatizados — Jest
+- [ ] Clean Code — boas práticas de código
+- [ ] Design Patterns — padrões de projeto
+- [ ] REST vs GraphQL
+
+### Linguagens e Frameworks
+- [ ] Next.js — React com SSR
+- [ ] Flask ou Django — backend com Python
+- [ ] Kotlin — Android moderno
+- [ ] Angular
+
+### Ferramentas e Infraestrutura
+- [ ] Linux — comandos essenciais no terminal
+- [ ] CI/CD — integração e entrega contínua
+- [ ] AWS ou Railway — deploy em nuvem
 
 ---
 
