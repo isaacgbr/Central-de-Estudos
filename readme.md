@@ -36,6 +36,7 @@ A ideia é simples: **aprender, documentar e evoluir.**
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 
 ---
 
@@ -91,6 +92,7 @@ central-de-estudos/
 | [Docker](./ferramentas/docker/README-docker.md) | Containers, Dockerfile, docker-compose e boas práticas |
 | [Postman](./ferramentas/postman/README-postman.md) | Testes de API, collections, environments e JWT |
 | [npm & npx](./ferramentas/npm-npx/README-npm-npx.md) | Gerenciamento de pacotes, scripts e package.json |
+| [Vite](./ferramentas/vite/README-vite.md) | Ferramenta de build e servidor de desenvolvimento |
 
 ### 🔐 Segurança
 | Conteúdo | Descrição |
