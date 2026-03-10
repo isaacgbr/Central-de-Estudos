@@ -1,0 +1,316 @@
+/* ============================================================
+   TEMPLATE — CSS BASE
+   Estrutura base para estilizar qualquer projeto web
+   ============================================================ */
+
+/* ─────────────────────────────────────────
+   VARIÁVEIS GLOBAIS — altere conforme o projeto
+   Use sempre var(--nome) para reutilizar
+───────────────────────────────────────── */
+:root {
+    /* Cores */
+    --primaria:     #2d6a4f;
+    --primaria-hover: #52b788;
+    --secundaria:   #f4a261;
+    --fundo:        #f0f4f0;
+    --card:         #ffffff;
+    --texto:        #1b1b1b;
+    --texto-suave:  #6b7280;
+    --borda:        #e0e0e0;
+    --erro:         #e63946;
+    --sucesso:      #2d6a4f;
+
+    /* Tipografia */
+    --fonte:        'Nunito', sans-serif;
+    --tamanho-base: 16px;
+
+    /* Espaçamentos */
+    --espacamento:  16px;
+    --radius:       8px;
+
+    /* Sombra */
+    --sombra:       0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* ─────────────────────────────────────────
+   RESET — zera estilos padrão do navegador
+───────────────────────────────────────── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* inclui padding e border no tamanho total */
+}
+
+/* ─────────────────────────────────────────
+   BASE — estilo padrão do documento
+───────────────────────────────────────── */
+body {
+    font-family: var(--fonte);
+    font-size: var(--tamanho-base);
+    background: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+/* Remove sublinhado dos links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove estilo padrão das listas */
+ul, ol { list-style: none; }
+
+/* Imagens responsivas por padrão */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Botões herdam a fonte do body */
+button {
+    font-family: var(--fonte);
+    cursor: pointer;
+}
+
+/* ─────────────────────────────────────────
+   CONTAINER — limita a largura do conteúdo
+───────────────────────────────────────── */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--espacamento);
+}
+
+/* ─────────────────────────────────────────
+   HEADER — cabeçalho fixo no topo
+───────────────────────────────────────── */
+.header {
+    background: var(--primaria);
+    padding: 16px 0;
+    position: sticky; /* fica fixo ao rolar a página */
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--sombra);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+}
+
+/* Menu de navegação */
+.nav { display: flex; gap: 8px; }
+
+.nav-link {
+    padding: 8px 14px;
+    border-radius: var(--radius);
+    color: rgba(255,255,255,0.75);
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* Link ativo e hover */
+.nav-link.active,
+.nav-link:hover {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+}
+
+/* ─────────────────────────────────────────
+   MAIN — conteúdo principal
+───────────────────────────────────────── */
+.main { padding: 40px 0; }
+
+/* ─────────────────────────────────────────
+   SECTION — seção de conteúdo
+───────────────────────────────────────── */
+.section { margin-bottom: 48px; }
+
+.section h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--primaria);
+    margin-bottom: 24px;
+}
+
+/* ─────────────────────────────────────────
+   HERO — seção de apresentação principal
+───────────────────────────────────────── */
+.hero {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primaria);
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: var(--texto-suave);
+    margin-bottom: 24px;
+}
+
+/* ─────────────────────────────────────────
+   GRID — layout em colunas
+───────────────────────────────────────── */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: var(--espacamento);
+}
+
+/* ─────────────────────────────────────────
+   CARD — caixa de conteúdo
+───────────────────────────────────────── */
+.card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: var(--sombra);
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primaria);
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--texto-suave);
+}
+
+/* ─────────────────────────────────────────
+   BOTÃO — estilos base e variações
+───────────────────────────────────────── */
+.btn {
+    display: inline-block;
+    padding: 11px 24px;
+    background: var(--primaria);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 15px;
+    font-weight: 700;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+    background: var(--primaria-hover);
+    transform: translateY(-1px);
+}
+
+/* Variação secundária */
+.btn-secundario {
+    background: transparent;
+    border: 2px solid var(--primaria);
+    color: var(--primaria);
+}
+
+.btn-secundario:hover {
+    background: var(--primaria);
+    color: #fff;
+}
+
+/* Variação perigo */
+.btn-perigo {
+    background: var(--erro);
+}
+
+/* ─────────────────────────────────────────
+   FORMULÁRIO — campos e labels
+───────────────────────────────────────── */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--texto-suave);
+}
+
+/* Campos de input e select */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px 12px;
+    border: 1px solid var(--borda);
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-family: var(--fonte);
+    outline: none;
+    transition: border 0.2s;
+}
+
+/* Campo em foco */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primaria-hover);
+}
+
+/* ─────────────────────────────────────────
+   FOOTER — rodapé
+───────────────────────────────────────── */
+.footer {
+    background: var(--primaria);
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 24px 0;
+    font-size: 14px;
+    margin-top: 48px;
+}
+
+/* ─────────────────────────────────────────
+   UTILITÁRIOS — classes auxiliares
+───────────────────────────────────────── */
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+.text-verde  { color: var(--primaria); }
+.text-erro   { color: var(--erro); }
+.text-suave  { color: var(--texto-suave); }
+.mt-1 { margin-top: 8px; }
+.mt-2 { margin-top: 16px; }
+.mt-3 { margin-top: 24px; }
+.mb-1 { margin-bottom: 8px; }
+.mb-2 { margin-bottom: 16px; }
+.mb-3 { margin-bottom: 24px; }
+.hidden { display: none; }
+
+/* ─────────────────────────────────────────
+   RESPONSIVIDADE — mobile first
+───────────────────────────────────────── */
+
+/* Tablet — a partir de 768px */
+@media (max-width: 768px) {
+    .grid { grid-template-columns: 1fr 1fr; } /* 2 colunas */
+    .hero h1 { font-size: 26px; }
+    .nav { gap: 4px; }
+}
+
+/* Mobile — até 480px */
+@media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; } /* 1 coluna */
+    .header .container { flex-direction: column; gap: 12px; }
+    .hero { padding: 40px 0; }
+    .hero h1 { font-size: 22px; }
+}

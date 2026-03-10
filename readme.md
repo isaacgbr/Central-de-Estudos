@@ -34,6 +34,8 @@ A ideia é simples: **aprender, documentar e evoluir.**
 ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
 ---
 
@@ -70,6 +72,8 @@ central-de-estudos/
 | [Java — Parte 3](./linguagens/java/README-java-parte3.md) | Arrays, ArrayList, exceções e boas práticas |
 | [Python](./linguagens/python/README-python.md) | Fundamentos, listas, dicionários, classes e módulos |
 | [PHP](./linguagens/php/README-php.md) | Fundamentos, arrays, classes e integração com banco de dados |
+| [HTML](./linguagens/html/README-html.md) | Estrutura, tags, formulários e semântica |
+| [CSS](./linguagens/css/README-css.md) | Seletores, flexbox, grid e responsividade |
 
 ### ⚙️ Frameworks
 | Conteúdo | Descrição |
@@ -91,7 +95,7 @@ central-de-estudos/
 ### 🔐 Segurança
 | Conteúdo | Descrição |
 |----------|-----------|
-| [Autenticação](./seguranca/autenticacao/README-autenticacao-resumo.md) | Login, JWT, bcrypt e proteção de rotas |
+| [Autenticação](./seguranca/autenticacao-js/README-autenticacao-resumo.md) | Login, JWT, bcrypt e proteção de rotas |
 
 ### 📋 Templates
 | Template | Descrição |
@@ -106,6 +110,8 @@ central-de-estudos/
 | [Auth Middleware](./templates/autenticacao/auth-middleware.js) | Middleware de autenticação JWT |
 | [JWT Utils](./templates/autenticacao/jwt-utils.js) | Funções para gerar e verificar tokens |
 | [.gitignore](./templates/git/gitignore-padrao.txt) | Modelo de .gitignore para projetos Node.js |
+| [HTML Base](./templates/html/base.html) | Estrutura base de página HTML completa |
+| [CSS Base](./templates/css/base.css) | Estilos base com variáveis, grid e responsividade |
 
 ---
 
